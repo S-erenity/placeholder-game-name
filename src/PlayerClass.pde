@@ -72,7 +72,7 @@ class Player extends Entity {
     fill(255);
     ellipse(x, y, radius * 2, radius * 2);
 
-    // Direction dot thing
+    
     float dx = 0, dy = 0;
     if (movingRight) dx =  1;
     if (movingLeft)  dx = -1;
@@ -93,7 +93,7 @@ class Player extends Entity {
     float endArc   = swordAngle + swipeArc / 2;
     float currentAngle = lerp(startArc, endArc, progress);
 
-    // trail arc from sword
+    // trail arc thingy from sword
     noFill();
     stroke(200, 200, 255, 160);
     strokeWeight(3);
